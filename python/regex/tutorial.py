@@ -1,4 +1,10 @@
-# Tutorial for regular expressions in python
+ ##                                           ##
+### TUTORIAL OF REGULAR EXPRESSIONS IN PYTHON ###
+ ##                                           ##
+
+##############################################################
+# Explanation
+##############################################################
 
 # Symbols
 
@@ -16,6 +22,10 @@
 #   ()	Creates a group
 #   |	Matches symbol on the left OR right side
 
+##############################################################
+# Helper code
+##############################################################
+
 # Reference
 # https://realpython.com/regex-python/
 
@@ -24,21 +34,25 @@ from colorama import Fore
 
 txt = "The rain in Spainn"
 
-# tests is regex succeeds on our text
+# tests if regex succeeds on our text
 def test(string):
     if(re.search(string, txt)):
         print(Fore.GREEN + "regex {%s} on text '%s' successful" % (string, txt))
     else:
         print(Fore.RED + "regex {%s} on text '%s' unsuccessful" % (string, txt))
 
-# tests is regex succeeds on text argument
+# tests if regex succeeds on custom text argument
 def test_custom(string, txt_arg):
     if(re.search(string, txt_arg)):
         print(Fore.GREEN + "regex {%s} on text '%s' successful" % (string, txt_arg))
     else:
         print(Fore.RED + "regex {%s} on text '%s' unsuccessful" % (string, txt_arg))
+        
+##############################################################
+# Examples
+##############################################################
 
-# examples -- text
+# examples -- regular text
 test("the")
 test("Thd")
 test("")
@@ -126,8 +140,8 @@ test_custom("a{,3}", "a")
 test_custom("a{,3}", "")
 
 ##############################################################
-
 # Exercises
+##############################################################
 
 # 1. Create a regex that succeeds on a string if it:
 #
@@ -143,4 +157,6 @@ test_custom("a{,3}", "")
 # 	j. has between 2 and 5 occurrences of "ab"
 # 	k. starts and ends with the letter f
 
-# Testing area
+##############################################################
+# Your code
+##############################################################
