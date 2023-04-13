@@ -127,22 +127,20 @@ test_custom("a{,3}", "")
 
 ##############################################################
 
-# Questions
+# Exercises
 
-# 1.
-# 
-# Create a regex that succeeds on a string if it:
+# 1. Create a regex that succeeds on a string if it:
 #
-# 	a. at least one digit
-# 	b. at least one lower case letter
-# 	c. a digit or a letter
+# 	a. has at least one digit
+# 	b. has at least one lower case letter
+# 	c. has a digit or a letter
 # 	d. begins with the word 'Cat'
 # 	e. contains the word 'the'
-# 	e. ends with an n
-# 	f. contains either "aiden" or "anton"
-# 	g. contains 2 occurrences of "ab"
-# 	h. less than 4 occurrences of "abc"
-# 	i. between 2 and 5 occurrences of "ab"
-# 	j. starts and ends with the letter f
+# 	f. ends with an n
+# 	g. contains either "aiden" or "anton"
+# 	h. contains 2 occurrences of "ab"
+# 	i. has less than 4 occurrences of "abc"
+# 	j. has between 2 and 5 occurrences of "ab"
+# 	k. starts and ends with the letter f
 
-# Testing areas
+# Testing area
