@@ -1,143 +1,42 @@
-### TOPIC: if-else statements
-### DESCRIPTION: An 'if-else statement' evaluates an expression, if the expression is true, it executes some code, if the expression is false, it executes other code.
+### TOPIC: Booleans
 
-## SUBTOPIC: Booleans
+# previously we discussed the number datatype, now we will introduce another datatype called a Boolean
 
-# a boolean is a data type that can be True or False.
+# While a number has many possible values, a Boolean has only two, True or False
 
-# a boolean cannot be any other thing, besides True or False.
+# let's set a variable (isBlue) to True
 
-# Here we create a boolean called 'isNight' and set it to False
+isBlue = True
 
-isNight = False
+# now we can print this variable to the console
 
-# Here we create a boolean called 'isDay' and set it to True
+print(isBlue)
 
-isDay = True
+# now let's set the variable isRed to False
 
-# we can use booleans to make decisions in a program
+isRed = False
 
-## SUBTOPIC: Booleans in if-else statements
+# but why do we have booleans?
 
-# this is an if-else statement
+# one use case is a logical expression, we can combine booleans with keywords 'and' or 'or' which reads each value and returns a new value, let's see
 
-if isDay:
-    print("it's daytime")
-else:
-    print("it's not daytime")
+# using the 'and' keyword, it will evaluate if both variables are True, and if so, return True, otherwise False
 
-# this if statement prints "it's daytime" if isDay is True and prints "it's not daytime" if isDay is False
+isACircle = True
+isGreen = True
 
-## EXERCISE 1
+# now we create another variable combining isACircela and isGreen
 
-# In the above if-else statement, what is printed?
+isAGreenCircle = isACircle and isGreen
 
-## EXERCISE 2
+print(isAGreenCircle) # True
 
-# okay, let's try another, what is printed from the below code
+# This will print out true because both isACircle and IsGreen are True
 
-if isNight:
-    print("it's nighttime")
-else:
-    print("it's not nighttime")
+# suppose we want to check if we have a red circle
 
-## EXERCISE 3
+isARedCircle = isACircle and isRed
 
-# Okay, last one! Let's tell a short story
+print(isARedCircle) # False
 
-# aiden wants to keep track of how many apples he eats
-
-aidens_apples = 0
-
-# aiden eats an apple every monday
-
-# today is monday
-
-isMonday = True
-
-if isMonday:
-    aidens_apples = aidens_apples + 1
-
-# today is tuesday
-
-isMonday = False
-
-if isMonday:
-    aidens_apples = aidens_apples + 1
-
-# how many apples does aiden have?
-
-## SUBTOPIC: if-else statements with expressions
-
-# when  you have an expression like 1 > 0 (one greater than zero) it evaluates automatically, in this case to True because 1 is greater than 0
-
-# so we can use this in an if-else statement
-
-if 1 > 0:
-    print("1 is greater than 0")
-else:
-    print("1 is not greater than 0")
-
-## EXERCISE 4
-
-# what is printed above?
-
-## SUBTOPIC: entering the pool
-
-# storytime again
-
-# mike is 10
-
-mike = 10
-
-# he wants to go to the pool
-
-# but he has to be 15 to go to the pool
-
-age_to_enter = 15
-
-if mike > age_to_enter:
-    print("you can enter the pool")
-else:
-    print("you cannot enter the pool")
-
-# so he can't enter the pool
-
-# ted is 17
-
-ted = 17
-
-# he wants to go to the pool
-
-if ted > age_to_enter:
-    print("you can enter the pool")
-else:
-    print("you cannot enter the pool")
-
-# and he is able to enter
-
-## EXERCISE 5
-
-# what will the following code print?
-
-age_to_enter = 20
-age_to_enter_sea = 25
-age_to_enter_jacuzzi = 15
-
-kelly = 19
-
-if kelly > age_to_enter:
-    print("you can enter the pool")
-else:
-    print("you cannot enter the pool")
-
-if kelly > age_to_enter_sea:
-    print("you can enter the sea")
-else:
-    print("you cannot enter the sea")
-    
-if kelly > age_to_enter_jacuzzi:
-    print("you can enter the jacuzzi")
-else:
-    print("you cannot enter the jacuzzi")
-    
+# but why was this false? because isRed is False
