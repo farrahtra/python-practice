@@ -4,39 +4,22 @@
 
 # While a number has many possible values, a Boolean has only two, True or False
 
-# let's set a variable (isBlue) to True
+# let's set variable isBlue to True and isRed to False
 
 isBlue = True
-
-# now we can print this variable to the console
+isRed = False
 
 print(isBlue)
-
-# now let's set the variable isRed to False
-
-isRed = False
+print(isRed)
 
 # but why do we have booleans?
 
-# one use case is a logical expression, we can combine booleans with keywords 'and' or 'or' which reads each value and returns a new value, let's see
+# with two booleans we can build another boolean using the `and` keyword
 
-# using the 'and' keyword, it will evaluate if both variables are True, and if so, return True, otherwise False
+# `and` evaluates to True only if both values are true
 
-isACircle = True
-isGreen = True
+true_and_true = True and True
 
-# now we create another variable combining isACircela and isGreen
+# let's print this and we should see True
 
-isAGreenCircle = isACircle and isGreen
-
-print(isAGreenCircle) # True
-
-# This will print out true because both isACircle and IsGreen are True
-
-# suppose we want to check if we have a red circle
-
-isARedCircle = isACircle and isRed
-
-print(isARedCircle) # False
-
-# but why was this false? because isRed is False
+print(true_and_true)
