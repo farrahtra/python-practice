@@ -1,42 +1,33 @@
-### TOPIC: Booleans
+### TOPIC: Booleans II - and
 
-# previously we discussed the number datatype, now we will introduce another datatype called a Boolean
+# last lession we introduced booleans, and the `and` keyword
 
-# While a number has many possible values, a Boolean has only two, True or False
+# we saw that True and True is True, but what about if we put other
+# boolean values?
 
-# let's set a variable (isBlue) to True
+# Take a minute to guess the output of these print statements
 
-isBlue = True
+print(True and False)
+print(False and False)
+print(True and False)
 
-# now we can print this variable to the console
+# as stated before when you `and` two values, the result will be true
+# if and only if both values are True
 
-print(isBlue)
+# Hence all three statements are false because in each other not both
+# are True
 
-# now let's set the variable isRed to False
+# don't worry about these lines
+from boolean_data import isBlue
+from boolean_data import isRed
+from boolean_data import isCircle
+from boolean_data import isSquare
 
-isRed = False
+# okay we've imported some mystery variables
 
-# but why do we have booleans?
+# now based on these print statements, what shape and color do we
+# have?
 
-# one use case is a logical expression, we can combine booleans with keywords 'and' or 'or' which reads each value and returns a new value, let's see
-
-# using the 'and' keyword, it will evaluate if both variables are True, and if so, return True, otherwise False
-
-isACircle = True
-isGreen = True
-
-# now we create another variable combining isACircela and isGreen
-
-isAGreenCircle = isACircle and isGreen
-
-print(isAGreenCircle) # True
-
-# This will print out true because both isACircle and IsGreen are True
-
-# suppose we want to check if we have a red circle
-
-isARedCircle = isACircle and isRed
-
-print(isARedCircle) # False
-
-# but why was this false? because isRed is False
+print(isBlue and isCircle)
+print(isRed and isSquare)
+print(isRed and isCircle)

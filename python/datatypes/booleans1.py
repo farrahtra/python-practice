@@ -1,4 +1,4 @@
-### TOPIC: Booleans
+### TOPIC: Booleans I
 
 # previously we discussed the number datatype, now we will introduce another datatype called a Boolean
 
